@@ -1,13 +1,13 @@
 const initState = {
-  greeting: "",
+  fact: "",
 };
 
 const reducer = (state = initState, action) => {
   switch (action.type) {
-    case "GREETING":
+    case "GET_FACT":
       return {
         ...state,
-        greeting: "hiii",
+        fact: action.payload,
       };
 
     default:
